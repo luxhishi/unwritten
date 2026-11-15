@@ -1,0 +1,54 @@
+Isaiah Daniel Palma
+Web Developer
+Bacolod City, Philippines | (+63) 922 620 9815 | palmaisaiah.d@gmail.com
+SUMMARY
+Computer Science graduate with hands-on experience in backend development, API design, database schemas,
+and software testing through an Applicant Tracking System internship and academic projects. Built a Django
+discussion platform with responsive Tailwind CSS interfaces. Experienced in collaborating with frontend developers
+to align backend functionality with application requirements.
+TECHNICAL SKILLS
+Frontend: HTML, CSS, JavaScript, Tailwind CSS; basic familiarity with React
+Backend and data: Python, Django, API design and development, PostgreSQL, Supabase, database design and data
+validation
+Tools and practices: Git, software testing, debugging, technical documentation
+Mobile development: Flutter, Dart, Android Studio
+DEVELOPMENT EXPERIENCE
+Backend Developer Intern
+Jul 2025 - Nov 2025
+iReply Back Office Services | Bacolod City
+- Helped build and maintain Applicant Tracking System features for candidate, job, and application data.
+ 
+- Designed APIs and database schemas with attention to data integrity, functionality, and reliable system
+ performance.
+- Collaborated with frontend teammates to align backend functionality with user-facing features and application
+ requirements.
+- Tested and refined features to identify and resolve development issues before deployment.
+ 
+SELECTED ACADEMIC PROJECTS
+DevMax | Developer Discussion Platform
+A.Y. 2025 - 2026
+Python, Django, Tailwind CSS
+- Developed a web platform with discussion threads, questions, updates, comments, and content voting.
+ 
+- Implemented backend application logic and data handling in Django, with responsive interfaces built using
+ Tailwind CSS.
+Stylex | Digital Wardrobe Mobile Application
+A.Y. 2025 - 2026
+Flutter, Dart, Supabase
+- Built user-facing features for organizing clothing, generating outfit ideas, and monitoring wardrobe usage.
+ 
+- Integrated Supabase for application data and backend functionality, with an interface focused on usability.
+ 
+ADDITIONAL EXPERIENCE
+Vice President for External Affairs | Rektikano Esports League
+Aug 2022 - Mar 2025
+- Coordinated stakeholders and teams to support projects, events, and digital operations under tight timelines.
+ 
+Race Data Coordinator | Autocross Club of Bacolod
+Selected events, 2024 - 2026
+- Maintained and verified race times and participant records, coordinating with event personnel for accurate
+ results.
+EDUCATION
+Bachelor of Science in Computer Science
+Apr 2026
+University of St. La Salle | Bacolod City, Negros Occidental

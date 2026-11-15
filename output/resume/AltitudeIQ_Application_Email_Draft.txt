@@ -1,0 +1,25 @@
+To: jobs@altitudeiq.ai
+Subject: Backend Software Engineer Application - Isaiah Daniel Palma
+
+Hi AltitudeIQ team,
+
+I'm applying for the Backend Software Engineer role. I'm a Computer Science graduate based in Bacolod City, Philippines, with backend internship experience in APIs, database schemas, and software testing. I've attached my resume and included my answers below.
+
+1. What's the hardest thing you've built - what made it hard, and how did you overcome it?
+
+The hardest project I've built was our thesis VR safety-training game. I started with no experience in Meta XR and had to learn it while integrating other technologies. The challenge was understanding how the components worked together and whether our changes would behave as intended. I worked through it by reading documentation, testing different approaches, and checking the results. That process helped me build the application while learning an unfamiliar platform.
+
+2. What do you most want to get better at as an engineer, and why?
+
+I want to get better at designing and debugging reliable backend systems. My internship and Django projects gave me experience with APIs and data handling. I now want to deepen my understanding of architecture, failure handling, and testing so I can make better decisions as systems grow. Your combination of mentorship and real product work interests me.
+
+3. What makes you different from other strong engineers?
+
+I combine technical curiosity with experience coordinating people. Alongside my development projects, I served as Vice President for External Affairs in an esports organization, coordinating stakeholders and deadlines. During my backend internship, I also collaborated with frontend developers. Those experiences strengthened my ability to communicate clearly and keep work moving across teams.
+
+Thank you for considering my application.
+
+Best regards,
+Isaiah Daniel Palma
+(+63) 922 620 9815
+palmaisaiah.d@gmail.com

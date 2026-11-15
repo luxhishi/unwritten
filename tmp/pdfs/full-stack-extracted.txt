@@ -1,0 +1,46 @@
+Isaiah Daniel Palma
+Full-Stack Developer
+Bacolod City, Philippines | (+63) 922 620 9815 | palmaisaiah.d@gmail.com
+SUMMARY
+Computer Science graduate with backend internship experience, full-stack project work in Python, Django, and
+PostgreSQL, and hands-on TypeScript development. Designed APIs and database schemas, integrated external
+services, and collaborated with frontend developers to test and troubleshoot application features.
+TECHNICAL SKILLS
+Development | Python, Django, TypeScript, JavaScript, React, Node.js tooling, Flutter, Dart
+Data and APIs | PostgreSQL, Supabase, SQL migrations, API design, REST API integration, JSON
+Tools and practices | Git, Android Studio, testing, debugging
+AI-assisted development | Codex, prior use of Claude
+DEVELOPMENT EXPERIENCE
+Backend Developer Intern
+Jul 2025 - Nov 2025
+iReply Back Office Services | Bacolod City
+- Helped build and maintain applicant tracking features for candidate, job, and application records.
+ 
+- Designed APIs and database schemas with attention to data integrity and application requirements.
+ 
+- Worked with frontend developers to integrate backend features and troubleshoot issues before deployment.
+ 
+SELECTED PROJECTS
+DevMax | Developer Discussion Platform
+Academic project
+Python, Django, PostgreSQL, Tailwind CSS
+- Built discussion threads, comments, and voting in Django, with PostgreSQL persistence and responsive Tailwind
+ CSS interfaces.
+Unwritten | Interactive Fiction Web Application
+Personal project
+TypeScript, React, Node.js, Vite
+- Built a web app with a rule-based parser, typed game state, and validation for imported JSON saves.
+ 
+- Used Node.js tooling to run Vite builds and automated tests for command handling and save behavior.
+ 
+Stylex | Digital Wardrobe Mobile Application
+Sole developer
+Flutter, Dart, Supabase, PostgreSQL
+- Integrated Supabase authentication and PostgreSQL persistence. Used SQL migrations for schema changes and
+ user-scoped database access.
+- Integrated the Open-Meteo API and parsed JSON forecast responses to inform outfit suggestions.
+ 
+EDUCATION
+Bachelor of Science in Computer Science
+Apr 2026
+University of St. La Salle | Bacolod City, Negros Occidental

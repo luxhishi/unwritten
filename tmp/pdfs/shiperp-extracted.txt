@@ -1,0 +1,39 @@
+Isaiah Daniel Palma
+Junior Python Developer
+Bacolod City, Philippines | (+63) 922 620 9815 | palmaisaiah.d@gmail.com
+SUMMARY
+Computer Science graduate who has used Python since college, including to build a Django discussion platform
+backed by PostgreSQL. During a backend internship, designed APIs and database schemas and worked with
+frontend developers to test features and resolve issues before deployment.
+TECHNICAL SKILLS
+Programming and web | Python, Django, object-oriented programming, HTML5, CSS, JavaScript
+APIs and databases | API design, REST API integration, JSON, PostgreSQL, MySQL, Supabase
+Development practices | Git, GitHub, software testing, debugging, technical documentation
+PYTHON PROJECT
+DevMax | Developer Discussion Platform
+Academic year 2025 - 2026
+Python, Django, PostgreSQL, Tailwind CSS
+ - Implemented discussion threads, comments, and voting in Python with Django, using PostgreSQL to store
+ application data.
+- Worked with Django models and views to connect database records and application logic to the web interface.
+ - The project includes automated Django tests for routing, sign-up, access checks, and post creation.
+ 
+DEVELOPMENT EXPERIENCE
+Backend Developer Intern
+Jul 2025 - Nov 2025
+iReply Back Office Services | Bacolod City
+ - Designed APIs and database schemas for a Next.js applicant tracking system that managed candidate, job, and
+ application records.
+- Worked with frontend developers to align backend features with requirements, test application behavior, and
+ resolve issues before deployment.
+ADDITIONAL PROJECT
+Stylex | Digital Wardrobe Mobile Application
+Sole developer
+Flutter, Dart, Supabase, PostgreSQL
+ - Integrated the Open-Meteo REST API and parsed JSON forecast data to inform outfit suggestions.
+ - Used Flutter unit and widget tests to check clothing tag normalization, outfit ranking, and screen appearance.
+ 
+EDUCATION
+Bachelor of Science in Computer Science
+Apr 2026
+University of St. La Salle | Bacolod City, Negros Occidental

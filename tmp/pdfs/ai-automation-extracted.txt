@@ -1,0 +1,48 @@
+Isaiah Daniel Palma
+AI Automations Specialist
+Bacolod City, Philippines | (+63) 922 620 9815 | palmaisaiah.d@gmail.com
+SUMMARY
+Computer Science graduate with experience using AI coding tools, integrating APIs, testing application features,
+and maintaining accurate records. Sole developer of Stylex, with backend internship experience supporting an
+applicant tracking system. Brings Python and JavaScript skills, technical documentation, and stakeholder
+coordination to business workflow automation.
+TECHNICAL SKILLS
+AI tools | Claude Code, ChatGPT, Codex
+Programming and integrations | Python, JavaScript, TypeScript, REST API integration, JSON
+Data and tools | Google Workspace, PostgreSQL, MySQL, Supabase, Git, GitHub
+Practices | Testing, debugging, data validation, technical documentation, stakeholder coordination
+RELEVANT EXPERIENCE
+Backend Developer Intern
+Jul 2025 - Nov 2025
+iReply Back Office Services | Bacolod City
+ - Supported applicant tracking features for candidate, job, and application records within a system that included
+ job-listing web scraping.
+- Designed APIs and database schemas, then tested and refined features with attention to data integrity.
+ - Worked with frontend teammates to clarify application requirements and resolve development issues.
+ Race Data Coordinator
+Selected events, 2024 - 2026
+Motorsports Development Program | Autocross Club of Bacolod
+ - Recorded race times and participant information, checked for errors and missing data, and coordinated accurate
+ results reporting during live events.
+SELECTED PROJECTS
+Stylex | Digital Wardrobe Mobile Application
+Sole developer
+Flutter, Dart, Supabase, PostgreSQL
+ - Integrated the Open-Meteo API, parsed JSON responses, and used forecast data to inform outfit suggestions.
+ - Built editable clothing records and connected the interface to authenticated Supabase data storage. Used AI
+ coding tools to support development and iteration.
+DevMax | Developer Discussion Platform
+Academic project
+Python, Django, PostgreSQL
+ - Implemented discussion, commenting, and voting features, connecting backend application logic with user
+ interactions and database records.
+LEADERSHIP EXPERIENCE
+Vice President for External Affairs
+Aug 2022 - Mar 2025
+Rektikano Esports League | Bacolod City
+ - Coordinated stakeholders and project deadlines, scheduled Facebook posts, and oversaw event documentation.
+ 
+EDUCATION
+Bachelor of Science in Computer Science
+Apr 2026
+University of St. La Salle | Bacolod City, Negros Occidental

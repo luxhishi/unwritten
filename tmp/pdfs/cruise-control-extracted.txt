@@ -1,0 +1,46 @@
+Isaiah Daniel Palma
+Full Stack Engineer
+Bacolod City, Philippines | (+63) 922 620 9815 | palmaisaiah.d@gmail.com
+SUMMARY
+Computer Science graduate with backend internship experience supporting a Next.js applicant tracking system and
+full stack project experience with Django and PostgreSQL. Designed APIs and database schemas, built responsive
+Tailwind CSS interfaces, and worked with frontend developers to test and debug features.
+TECHNICAL SKILLS
+Web development | React, Tailwind CSS, TypeScript, Next.js, JavaScript, HTML, CSS
+Backend and data | Python, Django, PostgreSQL, Supabase, MySQL, REST API integration, JSON
+Development tools | Git, GitHub, Node.js tooling, Flutter unit and widget testing, debugging
+AI-assisted development | Claude Code, Codex, ChatGPT
+DEVELOPMENT EXPERIENCE
+Backend Developer Intern
+Jul 2025 - Nov 2025
+iReply Back Office Services | Bacolod City
+ - Helped build and maintain features for candidate, job, and application records in a Next.js applicant tracking
+ system.
+- Designed APIs and database schemas for recruitment workflows, with attention to requirements and data
+ integrity.
+- Worked with frontend developers to integrate backend features, test application behavior, and resolve issues
+ before deployment.
+SELECTED PROJECTS
+DevMax | Developer Discussion Platform
+Academic project
+Python, Django, PostgreSQL, Tailwind CSS
+ - Built responsive Tailwind CSS interfaces for discussion threads, comments, and voting, with Django handling
+ application logic and PostgreSQL storing records.
+Stylex | Digital Wardrobe Mobile Application
+Sole developer
+Flutter, Dart, Supabase, PostgreSQL
+ - Built closet and outfit features backed by Supabase authentication and PostgreSQL, with SQL migrations and
+ row-level access policies.
+- Integrated the Open-Meteo REST API and processed JSON forecast data to inform outfit suggestions.
+ - Tested clothing tag normalization, outfit ranking, and screen appearance with Flutter unit and widget tests.
+ 
+ADDITIONAL EXPERIENCE
+Race Data Coordinator
+Selected events, 2024 - 2026
+Motorsports Development Program | Autocross Club of Bacolod
+ - Verified race times and participant records and coordinated results reporting with event staff during live
+ autocross events.
+EDUCATION
+Bachelor of Science in Computer Science
+Apr 2026
+University of St. La Salle | Bacolod City, Negros Occidental

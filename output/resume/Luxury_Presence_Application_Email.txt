@@ -1,0 +1,18 @@
+Subject: Jr. Website Builder Application - Isaiah Daniel Palma
+
+Dear Luxury Presence Hiring Team,
+
+I'm applying for the Jr. Website Builder position. I'm a Computer Science graduate based in Bacolod City, Philippines, with HTML, CSS, and JavaScript skills, basic familiarity with JSON, and experience building responsive interfaces. I'm also comfortable with Google Workspace and using AI agents for coding.
+
+For DevMax, a developer discussion platform, I designed responsive layouts using Tailwind CSS with attention to clear content presentation and ease of use. I also designed the interface for Stylex, a Flutter wardrobe application, focusing on usability and accessibility. During my backend internship at iReply Back Office Services, I collaborated with frontend developers and tested and refined features to improve consistency and usability.
+
+I'm comfortable learning unfamiliar technologies. For our thesis VR safety-training game, I learned Meta XR from scratch through documentation, experimentation, and repeated testing. I would bring that same approach to learning the Presence Platform and your build and self-QA standards.
+
+I'm interested in helping translate client requirements into clear, consistent websites. My development and stakeholder coordination experience have strengthened my attention to detail and communication. I'm willing to work your stated graveyard schedule.
+
+I've attached my resume for your review. Thank you for considering my application; I would welcome the opportunity to discuss how I could contribute to your team.
+
+Best regards,
+Isaiah Daniel Palma
+(+63) 922 620 9815
+palmaisaiah.d@gmail.com

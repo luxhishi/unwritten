@@ -1,0 +1,51 @@
+Isaiah Daniel Palma
+Backend Software Engineer
+Bacolod City, Philippines | (+63) 922 620 9815 | palmaisaiah.d@gmail.com
+SUMMARY
+Computer Science graduate with backend internship experience in API design, database schemas, application
+features, and software testing. Built academic applications using Python, Django, Flutter, and Supabase. Learns
+new technologies quickly and communicates clearly across teams. Seeking to contribute to AltitudeIQ while
+developing deeper expertise in backend systems and AI agent engineering.
+EDUCATION
+Bachelor of Science in Computer Science
+Apr 2026
+University of St. La Salle | Bacolod City, Negros Occidental
+TECHNICAL SKILLS
+Backend: Python, Django, API design and development, application logic
+Data: PostgreSQL, Supabase, database design, data handling and validation
+Engineering practices: Git, software testing, debugging, technical documentation
+Additional development: Flutter, Dart, HTML, CSS, JavaScript, Tailwind CSS, Unity
+DEVELOPMENT EXPERIENCE
+Backend Developer Intern
+Jul 2025 - Nov 2025
+iReply Back Office Services | Bacolod City
+- Helped build and maintain Applicant Tracking System features for candidate, job, and application data.
+ 
+- Designed APIs and database schemas with attention to data integrity, functionality, and reliable system
+ performance.
+- Collaborated with frontend teammates to align backend functionality with user-facing features and application
+ requirements.
+- Tested and refined features to identify development issues and improve system consistency and usability before
+ deployment.
+SELECTED ACADEMIC PROJECTS
+DevMax | Developer Discussion Platform
+A.Y. 2025 - 2026
+Python, Django, Tailwind CSS
+- Developed a web platform with discussion threads, questions, updates, comments, and content voting.
+ 
+- Implemented backend application logic, user interactions, and data handling using Django, with responsive
+ Tailwind CSS interfaces.
+Stylex | Digital Wardrobe Mobile Application
+A.Y. 2025 - 2026
+Flutter, Dart, Supabase
+- Built user-facing features for organizing clothing, generating outfit ideas, and monitoring wardrobe usage.
+ 
+- Integrated Supabase for application data and backend functionality, with an interface focused on usability.
+ 
+SafetyFirst VR | Safety Training Application
+A.Y. 2025 - 2026
+Unity, Meta VR, Voice Recognition
+- Developed interactive virtual reality scenarios for practicing responses to fire, earthquakes, and other emergency
+ hazards.
+- Integrated voice recognition so users could interact with the application through spoken commands and
+ responses.

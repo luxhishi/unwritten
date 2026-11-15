@@ -1,0 +1,52 @@
+Isaiah Daniel Palma
+Junior Website Builder
+Bacolod City, Philippines | (+63) 922 620 9815 | palmaisaiah.d@gmail.com
+Availability: Willing to work the stated graveyard schedule
+SUMMARY
+Computer Science graduate with HTML, CSS, and JavaScript skills and experience building responsive web and
+mobile interfaces. Brings feature testing, cross-team collaboration, and proficiency with Google Workspace and AI
+coding agents. Learns new platforms through documentation and experimentation, with attention to usability,
+consistency, and detail.
+TECHNICAL SKILLS
+Web and interface design: HTML, CSS, JavaScript, Tailwind CSS, responsive layouts, user interface design
+Tools and workflow: Git, Google Workspace, AI coding agents, technical documentation
+Application development: Python, Django, Flutter, Dart; basic familiarity with React
+Data and quality: PostgreSQL, Supabase, API development, testing, debugging; basic JSON familiarity
+DEVELOPMENT EXPERIENCE
+Backend Developer Intern
+Jul 2025 - Nov 2025
+iReply Back Office Services | Bacolod City
+- Helped build and maintain Applicant Tracking System features for candidate, job, and application data.
+ 
+- Collaborated with frontend teammates to align backend functionality with user-facing features and application
+ requirements.
+- Designed APIs and database schemas, then tested and refined features to resolve development issues and
+ improve consistency and usability before deployment.
+SELECTED ACADEMIC PROJECTS
+DevMax | Developer Discussion Platform
+A.Y. 2025 - 2026
+Python, Django, Tailwind CSS
+- Designed responsive interfaces using Tailwind CSS, with attention to clear content presentation and ease of use.
+ 
+- Built discussion threads, questions, updates, comments, and content voting, with Django handling application
+ logic and data.
+Stylex | Digital Wardrobe Mobile Application
+A.Y. 2025 - 2026
+Flutter, Dart, Supabase
+- Designed a clean, accessible Flutter interface for organizing clothing, generating outfit ideas, and monitoring
+ wardrobe usage.
+- Integrated Supabase to connect user-facing features with application data and backend functionality.
+ 
+SafetyFirst VR | Thesis Safety Training Game
+A.Y. 2025 - 2026
+- Learned Meta XR from scratch through documentation and iterative testing to build interactive safety scenarios
+ and integrate voice recognition.
+LEADERSHIP EXPERIENCE
+Vice President for External Affairs | Rektikano Esports League
+Aug 2022 - Mar 2025
+- Coordinated with internal and external stakeholders to support projects, events, and digital operations under
+ tight timelines.
+EDUCATION
+Bachelor of Science in Computer Science
+Apr 2026
+University of St. La Salle | Bacolod City, Negros Occidental

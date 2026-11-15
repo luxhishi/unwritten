@@ -1,0 +1,44 @@
+Isaiah Daniel Palma
+Software Engineer
+Bacolod City, Philippines | (+63) 922 620 9815 | palmaisaiah.d@gmail.com
+SUMMARY
+Computer Science graduate with backend internship experience supporting a Next.js-based applicant tracking
+system. Project work spans TypeScript, React, Python, and PostgreSQL, with additional experience using MySQL.
+Experienced in API design, database schemas, troubleshooting, and collaboration across frontend and backend
+development.
+TECHNICAL SKILLS
+Web development | TypeScript, JavaScript, React, Next.js, HTML, CSS, Tailwind CSS
+Backend and data | Python, Django, PostgreSQL, MySQL, Supabase, API design and integration, JSON
+Tools and practices | Git, GitHub, Node.js build and test tooling, Android Studio, testing, debugging
+AI-assisted development | Codex, Claude
+DEVELOPMENT EXPERIENCE
+Backend Developer Intern
+Jul 2025 - Nov 2025
+iReply Back Office Services | Bacolod City
+ - Helped build and maintain candidate, job, and application features in a Next.js-based applicant tracking system.
+ - Designed APIs and database schemas with attention to data integrity and application requirements.
+ - Worked with frontend developers to integrate backend features and troubleshoot issues before deployment.
+ 
+SELECTED PROJECTS
+DevMax | Developer Discussion Platform
+Academic project
+Python, Django, PostgreSQL, Tailwind CSS
+ - Built discussion threads, comments, and voting in Django, with PostgreSQL persistence and responsive Tailwind
+ CSS interfaces.
+Stylex | Digital Wardrobe Mobile Application
+Sole developer
+Flutter, Dart, Supabase, PostgreSQL
+ - Integrated Supabase authentication and PostgreSQL persistence. Used SQL migrations for schema changes and
+ user-scoped database access.
+- Integrated the Open-Meteo API and parsed JSON forecast responses to inform outfit suggestions.
+ 
+LEADERSHIP EXPERIENCE
+Vice President for External Affairs
+Aug 2022 - Mar 2025
+Rektikano Esports League | Bacolod City
+ - Coordinated stakeholders, events, and digital operations while managing the league's Facebook content.
+ 
+EDUCATION
+Bachelor of Science in Computer Science
+Apr 2026
+University of St. La Salle | Bacolod City, Negros Occidental

@@ -1,0 +1,448 @@
+{
+  "id": "wonderland",
+  "title": "Down the Rabbit-Hole",
+  "author": "Lewis Carroll",
+  "source": "https://www.gutenberg.org/files/11/11-h/11-h.htm",
+  "quests": [
+    {
+      "id": "garden",
+      "title": "Through the little door",
+      "summary": "Find a way into the garden.",
+      "completedFlag": "gardenReached",
+      "completionConditions": [{ "location": "garden" }],
+      "steps": [
+        {
+          "label": "Find the golden key",
+          "conditions": [{ "any": [{ "hasItem": "key" }, { "flag": "doorUnlocked" }] }]
+        },
+        { "label": "Unlock the little door", "conditions": [{ "flag": "doorUnlocked" }] },
+        {
+          "label": "Find a way to become smaller",
+          "conditions": [{ "any": [{ "size": "small" }, { "flag": "gardenReached" }] }]
+        },
+        { "label": "Reach the lovely garden", "conditions": [{ "flag": "gardenReached" }] }
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "from": "hall",
+      "to": "garden",
+      "conditions": [{ "flag": "doorUnlocked" }],
+      "message": "The little door is locked."
+    },
+    {
+      "from": "hall",
+      "to": "garden",
+      "conditions": [{ "size": "small" }],
+      "passage": { "text": "She could not even get her head through the doorway.", "chapter": "I" },
+      "message": "Entry requires a smaller size."
+    }
+  ],
+  "locations": [
+    {
+      "id": "hall",
+      "name": "The Hall of Doors",
+      "subtitle": "Beneath the rabbit-hole",
+      "aliases": ["hall", "hall of doors", "hallway"],
+      "description": {
+        "text": "There were doors all round the hall, but they were all locked; and when Alice had been all the way down one side and up the other, trying every door, she walked sadly down the middle, wondering how she was ever to get out again.",
+        "chapter": "I"
+      },
+      "exits": { "west": "landing", "north": "passage", "east": "pool", "south": "garden" }
+    },
+    {
+      "id": "landing",
+      "name": "The Rabbit-Hole",
+      "subtitle": "At the foot of the fall",
+      "aliases": ["rabbit hole", "rabbit-hole", "landing", "well"],
+      "description": {
+        "text": "Alice was not a bit hurt, and she jumped up on to her feet in a moment: she looked up, but it was all dark overhead; before her was another long passage, and the White Rabbit was still in sight, hurrying down it.",
+        "chapter": "I"
+      },
+      "exits": { "east": "hall" }
+    },
+    {
+      "id": "passage",
+      "name": "The Long Passage",
+      "subtitle": "A little further into the unknown",
+      "aliases": ["passage", "long passage", "corridor"],
+      "description": {
+        "text": "There was not a moment to be lost: away went Alice like the wind, and was just in time to hear it say, as it turned a corner, “Oh my ears and whiskers, how late it’s getting!”",
+        "chapter": "I"
+      },
+      "exits": { "south": "hall" }
+    },
+    {
+      "id": "pool",
+      "name": "The Pool of Tears",
+      "subtitle": "Along the water’s edge",
+      "aliases": ["pool", "pool of tears", "shore", "water"],
+      "description": {
+        "text": "They were indeed a queer-looking party that assembled on the bank—the birds with draggled feathers, the animals with their fur clinging close to them, and all dripping wet, cross, and uncomfortable.",
+        "chapter": "III"
+      },
+      "exits": { "west": "hall" }
+    },
+    {
+      "id": "garden",
+      "name": "The Lovely Garden",
+      "subtitle": "Beyond the little door",
+      "aliases": ["garden", "lovely garden", "outside"],
+      "description": {
+        "text": "Then she went down the little passage: and then—she found herself at last in the beautiful garden, among the bright flower-beds and the cool fountains.",
+        "chapter": "VII"
+      },
+      "exits": { "north": "hall" }
+    }
+  ],
+  "entities": [
+    {
+      "id": "key",
+      "name": "Golden key",
+      "aliases": ["tiny golden key", "little golden key", "golden key", "key"],
+      "kind": "item",
+      "portable": true,
+      "location": "hall",
+      "icon": "key",
+      "description": {
+        "text": "Suddenly she came upon a little three-legged table, all made of solid glass; there was nothing on it except a tiny golden key.",
+        "chapter": "I"
+      }
+    },
+    {
+      "id": "bottle",
+      "name": "Little bottle",
+      "aliases": ["little bottle", "drink me bottle", "bottle", "potion", "drink me"],
+      "kind": "item",
+      "portable": true,
+      "location": "hall",
+      "icon": "bottle",
+      "condition": [{ "notFlag": "bottleUsed" }],
+      "description": {
+        "text": "This time she found a little bottle on it, (“which certainly was not here before,” said Alice,) and round the neck of the bottle was a paper label, with the words “DRINK ME,” beautifully printed on it in large letters.",
+        "chapter": "I"
+      }
+    },
+    {
+      "id": "cake",
+      "name": "Little cake",
+      "aliases": ["little cake", "cake", "eat me"],
+      "kind": "item",
+      "portable": true,
+      "location": "hall",
+      "icon": "cake",
+      "condition": [{ "flag": "cakeFound", "notFlag": "cakeUsed" }],
+      "description": {
+        "text": "Soon her eye fell on a little glass box that was lying under the table: she opened it, and found in it a very small cake, on which the words “EAT ME” were beautifully marked in currants.",
+        "chapter": "I"
+      }
+    },
+    {
+      "id": "fan",
+      "name": "White Rabbit’s fan",
+      "aliases": ["white rabbit s fan", "rabbit s fan", "white fan", "fan"],
+      "kind": "item",
+      "portable": true,
+      "location": "passage",
+      "icon": "fan",
+      "condition": [{ "flag": "rabbitMet" }],
+      "description": {
+        "text": "She soon found out that the cause of this was the fan she was holding, and she dropped it hastily, just in time to avoid shrinking away altogether.",
+        "chapter": "II"
+      }
+    },
+    {
+      "id": "thimble",
+      "name": "Thimble",
+      "aliases": ["silver thimble", "thimble"],
+      "kind": "item",
+      "portable": true,
+      "icon": "thimble",
+      "description": { "text": "“Only a thimble,” said Alice sadly.", "chapter": "III" }
+    },
+    {
+      "id": "comfits",
+      "name": "Box of comfits",
+      "aliases": ["box of comfits", "comfits", "sweets", "candy"],
+      "kind": "item",
+      "portable": true,
+      "icon": "box",
+      "description": {
+        "text": "Alice had no idea what to do, and in despair she put her hand in her pocket, and pulled out a box of comfits.",
+        "chapter": "III"
+      }
+    },
+    {
+      "id": "table",
+      "name": "Glass table",
+      "aliases": ["three legged table", "glass table", "table", "glass box", "box under the table"],
+      "kind": "feature",
+      "location": "hall",
+      "description": {
+        "text": "A little three-legged table, all made of solid glass.",
+        "chapter": "I"
+      }
+    },
+    {
+      "id": "door",
+      "name": "Little door",
+      "aliases": [
+        "little door",
+        "small door",
+        "tiny door",
+        "garden door",
+        "door",
+        "curtain",
+        "lock"
+      ],
+      "kind": "feature",
+      "location": "hall",
+      "description": {
+        "text": "She came upon a low curtain she had not noticed before, and behind it was a little door about fifteen inches high.",
+        "chapter": "I"
+      }
+    },
+    {
+      "id": "rabbit",
+      "name": "White Rabbit",
+      "aliases": ["white rabbit", "rabbit"],
+      "kind": "npc",
+      "location": "passage",
+      "description": {
+        "text": "It was the White Rabbit returning, splendidly dressed, with a pair of white kid gloves in one hand and a large fan in the other.",
+        "chapter": "II"
+      }
+    },
+    {
+      "id": "mouse",
+      "name": "The Mouse",
+      "aliases": ["the mouse", "mouse"],
+      "kind": "npc",
+      "location": "pool",
+      "description": {
+        "text": "The Mouse looked at her rather inquisitively, and seemed to her to wink with one of its little eyes, but it said nothing.",
+        "chapter": "II"
+      }
+    },
+    {
+      "id": "dodo",
+      "name": "The Dodo",
+      "aliases": ["the dodo", "dodo", "bird"],
+      "kind": "npc",
+      "location": "pool",
+      "description": {
+        "text": "There were a Duck and a Dodo, a Lory and an Eaglet, and several other curious creatures.",
+        "chapter": "II"
+      }
+    }
+  ],
+  "rules": [
+    {
+      "id": "search-hall",
+      "actions": ["search"],
+      "target": "hall",
+      "effects": [{ "flag": "cakeFound" }],
+      "passage": {
+        "text": "Soon her eye fell on a little glass box that was lying under the table: she opened it, and found in it a very small cake, on which the words “EAT ME” were beautifully marked in currants.",
+        "chapter": "I"
+      }
+    },
+    {
+      "id": "search-table",
+      "actions": ["search", "inspect", "use"],
+      "target": "table",
+      "effects": [{ "flag": "cakeFound" }],
+      "passage": {
+        "text": "Soon her eye fell on a little glass box that was lying under the table: she opened it, and found in it a very small cake, on which the words “EAT ME” were beautifully marked in currants.",
+        "chapter": "I"
+      }
+    },
+    {
+      "id": "door-open",
+      "actions": ["use"],
+      "target": "key",
+      "conditions": [{ "location": "hall", "hasItem": "key" }],
+      "effects": [{ "flag": "doorUnlocked" }],
+      "passage": {
+        "text": "She tried the little golden key in the lock, and to her great delight it fitted!",
+        "chapter": "I"
+      },
+      "message": "Little door unlocked."
+    },
+    {
+      "id": "door-locked",
+      "actions": ["inspect"],
+      "target": "door",
+      "conditions": [{ "notFlag": "doorUnlocked" }],
+      "effects": [{ "flag": "doorSeen" }],
+      "passage": {
+        "text": "She came upon a low curtain she had not noticed before, and behind it was a little door about fifteen inches high.",
+        "chapter": "I"
+      },
+      "message": "The little door is locked."
+    },
+    {
+      "id": "door-unlocked",
+      "actions": ["inspect"],
+      "target": "door",
+      "conditions": [{ "flag": "doorUnlocked" }],
+      "passage": {
+        "text": "Alice opened the door and found that it led into a small passage, not much larger than a rat-hole: she knelt down and looked along the passage into the loveliest garden you ever saw.",
+        "chapter": "I"
+      }
+    },
+    {
+      "id": "drink",
+      "actions": ["drink", "use"],
+      "target": "bottle",
+      "conditions": [{ "hasItem": "bottle", "notFlag": "bottleUsed" }],
+      "effects": [{ "size": "small", "flag": "bottleUsed", "removeItem": "bottle" }],
+      "passage": {
+        "text": "“What a curious feeling!” said Alice; “I must be shutting up like a telescope.” And so it was indeed: she was now only ten inches high.",
+        "chapter": "I"
+      },
+      "message": "Size changed: ten inches tall."
+    },
+    {
+      "id": "eat",
+      "actions": ["eat", "use"],
+      "target": "cake",
+      "conditions": [{ "hasItem": "cake", "notFlag": "cakeUsed" }],
+      "effects": [{ "size": "tall", "flag": "cakeUsed", "removeItem": "cake" }],
+      "passage": {
+        "text": "“Curiouser and curiouser!” cried Alice (she was so much surprised, that for the moment she quite forgot how to speak good English); “now I’m opening out like the largest telescope that ever was! Good-bye, feet!”",
+        "chapter": "II"
+      },
+      "message": "Size changed: nine feet tall."
+    },
+    {
+      "id": "use-fan",
+      "actions": ["use"],
+      "target": "fan",
+      "conditions": [{ "hasItem": "fan" }],
+      "effects": [{ "size": "small" }],
+      "passage": {
+        "text": "She soon found out that the cause of this was the fan she was holding, and she dropped it hastily, just in time to avoid shrinking away altogether.",
+        "chapter": "II"
+      },
+      "message": "Size changed: ten inches tall. Fan retained in inventory."
+    },
+    {
+      "id": "rabbit",
+      "actions": ["talk", "ask"],
+      "target": "rabbit",
+      "effects": [{ "flag": "rabbitMet", "remember": ["rabbit", "spoken"] }],
+      "passage": {
+        "text": "“Oh! the Duchess, the Duchess! Oh! won’t she be savage if I’ve kept her waiting!”",
+        "chapter": "II"
+      },
+      "message": "The fan is now available here."
+    },
+    {
+      "id": "mouse-apology",
+      "actions": ["talk", "ask"],
+      "target": "mouse",
+      "topic": "apolog",
+      "conditions": [{ "flag": "mouseOffended" }],
+      "effects": [
+        { "unsetFlag": "mouseOffended", "trust": ["mouse", 2], "remember": ["mouse", "apology"] }
+      ],
+      "passage": {
+        "text": "“Let us get to the shore, and then I’ll tell you my history, and you’ll understand why it is I hate cats and dogs.”",
+        "chapter": "II"
+      }
+    },
+    {
+      "id": "mouse-cats",
+      "actions": ["talk", "ask"],
+      "target": "mouse",
+      "topic": "cat|dog|dinah",
+      "conditions": [{ "notFlag": "mouseOffended" }],
+      "effects": [
+        { "flag": "mouseOffended", "trust": ["mouse", -2], "remember": ["mouse", "cats mentioned"] }
+      ],
+      "passage": {
+        "text": "“Not like cats!” cried the Mouse, in a shrill, passionate voice. “Would you like cats if you were me?”",
+        "chapter": "II"
+      }
+    },
+    {
+      "id": "mouse-offended",
+      "actions": ["talk", "ask"],
+      "target": "mouse",
+      "conditions": [{ "flag": "mouseOffended" }],
+      "passage": {
+        "text": "“Our family always hated cats: nasty, low, vulgar things! Don’t let me hear the name again!”",
+        "chapter": "II"
+      }
+    },
+    {
+      "id": "mouse-history",
+      "actions": ["talk", "ask"],
+      "target": "mouse",
+      "topic": "history|story|tale",
+      "conditions": [{ "notFlag": "mouseOffended" }],
+      "effects": [{ "flag": "mouseStory", "remember": ["mouse", "history shared"] }],
+      "passage": {
+        "text": "“Mine is a long and a sad tale!” said the Mouse, turning to Alice, and sighing.",
+        "chapter": "III"
+      }
+    },
+    {
+      "id": "mouse-greeting",
+      "actions": ["talk", "ask"],
+      "target": "mouse",
+      "effects": [{ "remember": ["mouse", "spoken"] }],
+      "passage": {
+        "text": "“Sit down, all of you, and listen to me! I’ll soon make you dry enough!”",
+        "chapter": "III"
+      }
+    },
+    {
+      "id": "dodo-prize",
+      "actions": ["give"],
+      "target": "dodo",
+      "conditions": [{ "hasItem": "comfits", "notFlag": "prizesGiven" }],
+      "effects": [
+        {
+          "removeItem": "comfits",
+          "flag": "prizesGiven",
+          "trust": ["dodo", 2],
+          "remember": ["dodo", "prizes given"]
+        }
+      ],
+      "passage": { "text": "“Everybody has won, and all must have prizes.”", "chapter": "III" },
+      "message": "Box of comfits given. The Dodo’s trust increased."
+    },
+    {
+      "id": "dodo-talk",
+      "actions": ["talk", "ask"],
+      "target": "dodo",
+      "effects": [{ "remember": ["dodo", "spoken"] }],
+      "passage": {
+        "text": "“Why,” said the Dodo, “the best way to explain it is to do it.”",
+        "chapter": "III"
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "rabbit-watch",
+      "weight": 2,
+      "cooldown": 8,
+      "conditions": [{ "location": "passage" }],
+      "passage": { "text": "“Oh dear! Oh dear! I shall be late!”", "chapter": "I" }
+    },
+    {
+      "id": "hall-thought",
+      "weight": 1,
+      "cooldown": 12,
+      "conditions": [{ "location": "hall", "size": "normal" }],
+      "passage": {
+        "text": "“Oh, how I wish I could shut up like a telescope! I think I could, if I only knew how to begin.”",
+        "chapter": "I"
+      }
+    }
+  ]
+}

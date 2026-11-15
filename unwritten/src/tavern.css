@@ -1,0 +1,438 @@
+/* Shared tavern surfaces: walnut, brass, lamplight, and readable parchment. */
+:root {
+  --paper: #f1e5cc;
+  --line: #d2b98e;
+  --gold: #c89953;
+  --green: #795332;
+  --muted: #866d4e;
+  --wood-grain: repeating-linear-gradient(
+    2deg,
+    transparent 0 7px,
+    #f4c47a05 8px,
+    transparent 9px 18px
+  );
+  --parchment:
+    radial-gradient(ellipse at 15% 5%, #fff7e366, transparent 55%), url('/parchment.svg');
+}
+body {
+  background: #251b14;
+}
+::selection {
+  background: #d4ad6b;
+  color: #332316;
+}
+.library-header,
+.sidebar {
+  background: var(--wood-grain), linear-gradient(90deg, #241a13, #38271b 55%, #2b1e16);
+  box-shadow: inset -1px 0 #b18a4933;
+}
+.library-header {
+  border-bottom: 1px solid #a67b394d;
+}
+.brand {
+  color: #f0d9a8;
+  text-shadow: 0 2px 12px #f4ae3922;
+}
+.brand-mark {
+  color: #c99b54;
+}
+.brand small {
+  color: #b49a70;
+}
+.library-hero {
+  background:
+    linear-gradient(90deg, #21180ff5 10%, #271b10e8 32%, #2a1d1275 60%, #291b1030),
+    url('/tavern.svg') 68% 55% / cover;
+  border-bottom: 5px solid #6d492b;
+  box-shadow:
+    inset 0 -1px #c4924e,
+    0 3px 9px #29190e33;
+}
+.library-hero h1 {
+  font-size: clamp(48px, 5.1vw, 73px);
+  color: #f6e5bd;
+}
+.library-hero h1 em {
+  color: #d3a565;
+}
+.library-hero p {
+  color: #d0b992;
+}
+.library-hero .library-eyebrow {
+  color: #cba265;
+}
+.library-browse {
+  color: #f4d7a4;
+  border-color: #bd8c4e;
+}
+.library-hero-caption {
+  color: #d0ad7a;
+}
+.library-page {
+  background: var(--parchment), #eadbbd;
+  color: #533c29;
+}
+.library-collection {
+  position: relative;
+}
+.collection-heading h2 {
+  color: #513622;
+}
+.collection-heading p {
+  color: #806a4d;
+}
+.library-eyebrow,
+.library-result-count {
+  color: #98703d;
+}
+.library-search {
+  background: #fff4db;
+  border-color: #bda37a;
+  box-shadow: inset 0 1px 4px #6c4b2310;
+}
+.library-search input,
+.library-search svg {
+  color: #72532e;
+}
+.library-search input::placeholder {
+  color: #927957;
+}
+.library-story {
+  border: 1px solid #ad8a56;
+  border-radius: 5px;
+  box-shadow:
+    0 6px 20px #5c3e2012,
+    0 1px 2px #5c3e2020;
+  background: #f6ead0;
+}
+.library-story-details {
+  background: var(--parchment);
+}
+.library-story-details > h3 {
+  color: #563a22;
+}
+.library-story blockquote {
+  color: #735a39;
+}
+.library-story cite,
+.library-author {
+  color: #89724f;
+}
+.library-cover {
+  background-color: #775130;
+  background-blend-mode: luminosity;
+  border-right: 1px solid #9c773c;
+}
+.library-cover::before {
+  background: linear-gradient(0deg, #291b11f5, #3b281333 85%);
+}
+.library-cover h3 {
+  color: #f4ddb0;
+  text-shadow: 0 2px 9px #1d100c;
+}
+.library-cover-badge {
+  border-color: #b58a49;
+  color: #ebd1a0;
+  background: #302317e8;
+}
+.library-story-meta span:first-child {
+  background: #ebd9b4;
+  border-color: #d2b887;
+  color: #7b552d;
+}
+.library-story-meta span:last-child {
+  color: #927449;
+}
+.library-progress,
+.library-story-facts {
+  color: #886a41;
+}
+.library-play,
+.primary-button,
+.command-form button:not(:disabled) {
+  background: linear-gradient(#926339, #754b2a);
+  border: 1px solid #604022;
+  box-shadow:
+    inset 0 1px #e5c08a55,
+    0 2px 3px #39241122;
+  color: #fff0ce;
+}
+.library-play:hover,
+.primary-button:hover,
+.command-form button:hover:not(:disabled) {
+  background: linear-gradient(#a77b44, #83532d);
+}
+.library-principles {
+  border-top-color: #b99b6759;
+}
+.library-principles svg {
+  color: #a47c3e;
+}
+.library-principles h3 {
+  color: #75522d;
+}
+.library-principles p {
+  color: #8a7251;
+}
+.library-footer {
+  background: var(--wood-grain), #2c2017;
+  border-top: 3px solid #936a38;
+  color: #c6a777;
+}
+.library-header nav button {
+  border-color: #987244;
+  color: #ead0a3;
+  background: #a1713310;
+}
+.library-header nav button:hover {
+  background: #624426;
+}
+.sidebar {
+  border-right: 2px solid #8c6535;
+}
+.sidebar-rule,
+.size-meter {
+  border-color: #7c5a344d;
+}
+.sidebar-rule {
+  background: #7c5a344d;
+}
+.nav-label {
+  color: #a18862;
+}
+.campaign-tag {
+  color: #bea174;
+}
+.nav-link {
+  color: #c7b08b;
+}
+.nav-link.active {
+  background: linear-gradient(90deg, #755335, #5b4029);
+  color: #f9e4ba;
+  box-shadow: inset 0 0 0 1px #b68a4a40;
+}
+.nav-link:hover {
+  background: #61462c;
+  color: #f3dfb9;
+}
+.nav-link.active:before {
+  background: #dda44e;
+}
+.nav-count {
+  color: #e0c594;
+  border-color: #9a7949;
+}
+.nav-link.active svg:first-child {
+  color: #e0b66e;
+}
+.character b {
+  color: #eddbb7;
+}
+.character div > span,
+.sidebar-bottom,
+.sidebar-bottom button,
+.size-meter,
+.stat-row {
+  color: #b39870;
+}
+.size-meter b,
+.stat-row b {
+  color: #e0c99d;
+}
+.avatar svg {
+  border-color: #ab824b;
+  filter: sepia(0.65);
+}
+.save-button {
+  background: linear-gradient(#674a2c, #503720);
+  border-color: #a47b40;
+  color: #efdcaf;
+}
+.save-button:hover {
+  background: #795532;
+}
+.status-dot,
+.save-dot {
+  background: #d1a05a;
+}
+.topbar {
+  background: var(--wood-grain), #3b2a1d;
+  border-bottom: 1px solid #b18649;
+}
+.breadcrumb,
+.breadcrumb-title,
+.library-back,
+.topbar .icon-button,
+.live-label {
+  color: #d4b88c;
+}
+.topbar .icon-button:hover {
+  background: #725130;
+  color: #f5deb0;
+}
+.location-scene {
+  background-color: #805932;
+  background-blend-mode: luminosity;
+}
+.scene-wash {
+  background:
+    linear-gradient(90deg, #302015ec, #39281770 65%, #37271933),
+    linear-gradient(0deg, #30201699, transparent);
+}
+.scene-garden .scene-wash {
+  background: linear-gradient(90deg, #322618ed, #65472866);
+}
+.scene-title h1 {
+  color: #f7e4ba;
+}
+.scene-title p,
+.scene-top,
+.scene-top > span + span {
+  color: #d4bb91;
+}
+.chapter-kicker {
+  color: #ddb575;
+}
+.location-chip {
+  color: #efd2a0;
+  background: #382719c9;
+  border-color: #ad824a66;
+}
+.reading-area {
+  background: var(--parchment), var(--paper);
+  scrollbar-color: #bba47c transparent;
+}
+.story-entry p {
+  color: #59432d;
+}
+.first-entry > p:first-letter {
+  color: #835c32;
+}
+.passage-source,
+.arrival-marker,
+.section-label {
+  color: #997d54;
+}
+.command-dock {
+  background: var(--parchment), #e7d6b4;
+  border-top: 1px solid #b79a67;
+  box-shadow: 0 -4px 12px #76502508;
+}
+.command-form {
+  background: #fff4da;
+  border-color: #b29462;
+}
+.command-form input {
+  color: #63482b;
+}
+.command-form input::placeholder {
+  color: #a0865b;
+}
+.command-label label {
+  color: #7b572e;
+}
+.command-label > span,
+.command-footer,
+.command-footer > span:last-child {
+  color: #977c52;
+}
+.command-entry {
+  background: #e7d5af;
+  border-color: #a98243;
+  color: #6f4c2a;
+}
+.parsed-action {
+  color: #8b6d40;
+  border-color: #c9b081;
+}
+.system-entry {
+  color: #8b704b;
+}
+.right-rail {
+  background: var(--parchment), #e8d9b9;
+  border-left-color: #ccb184;
+}
+.quest-card {
+  background: #f0e1bf;
+  border-color: #b99c65;
+  box-shadow:
+    0 2px 6px #5434110a,
+    inset 0 0 20px #ab7d2920;
+}
+.quest-card h2 {
+  color: #6f4b25;
+}
+.quest-card > p,
+.rail-location {
+  color: #8a683c;
+}
+.quest-state {
+  color: #956b31;
+  border-color: #c7aa71;
+}
+.quest-progress span {
+  background: #d9c69e;
+}
+.quest-progress span.done {
+  background: #aa7c38;
+}
+.quest-caption,
+.rail-note {
+  color: #987e52;
+}
+.rail-section {
+  border-top-color: #cbb58a;
+}
+.rail-heading,
+.rail-section h3,
+.nearby-list > div,
+.text-link {
+  color: #93713e;
+}
+.pocket-icons > span {
+  background: #f3e3c0;
+  border-color: #c6ac79;
+  color: #a17b3c;
+}
+.content-panel,
+.modal {
+  background: var(--parchment), #f1e5cc;
+}
+.modal {
+  border-color: #c49b5b;
+}
+.modal-backdrop {
+  background: #21160fd9;
+}
+.inventory-card,
+.journal-main,
+.save-slot {
+  background: #f3e6c9;
+  border-color: #d1b98b;
+}
+.item-art,
+.map-canvas,
+.guide-source {
+  background: #eaddba;
+  border-color: #ccb17c;
+}
+.objective.done,
+.relationship {
+  color: #94703a;
+}
+.literary-note,
+.literary-note p,
+.literary-note button {
+  color: #a08553;
+}
+@media (max-width: 520px) {
+  .library-hero {
+    background-position: 62% center;
+  }
+  .library-hero h1 {
+    font-size: 49px;
+  }
+  .library-hero-caption {
+    font-size: 8px;
+  }
+}

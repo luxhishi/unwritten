@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="650" viewBox="0 0 1500 650">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1">
+      <stop stop-color="#142e34" />
+      <stop offset="1" stop-color="#526f66" />
+    </linearGradient>
+    <linearGradient id="water" x2="0" y2="1">
+      <stop stop-color="#6e9487" />
+      <stop offset="1" stop-color="#193a3b" />
+    </linearGradient>
+    <filter id="noise">
+      <feTurbulence baseFrequency=".65" numOctaves="3" stitchTiles="stitch" />
+      <feComponentTransfer><feFuncA type="linear" slope=".1" /></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="soft-light" />
+    </filter>
+  </defs>
+  <g filter="url(#noise)">
+    <path fill="url(#bg)" d="M0 0h1500v650H0z" />
+    <path
+      d="M0 550V200Q0 0 180 0t180 200v280M1110 480V200q0-200 180-200t180 200v350"
+      fill="none"
+      stroke="#728e7e"
+      stroke-width="9"
+      opacity=".25"
+    />
+    <path
+      d="M420 470V250q0-170 330-170t330 170v220"
+      fill="none"
+      stroke="#769280"
+      stroke-width="10"
+      opacity=".35"
+    />
+    <path
+      d="M455 470V260q0-145 295-145t295 145v210"
+      fill="none"
+      stroke="#8ba18b"
+      stroke-width="2"
+      opacity=".25"
+    />
+    <path d="M0 480q200-60 370-10l120 180H0M1500 480q-240-60-400-10l-90 180h490" fill="#233e34" />
+    <path d="M370 470q380-100 730 0l-90 180H490z" fill="url(#water)" />
+    <g fill="none" stroke="#b4c4aa" stroke-width="1" opacity=".35">
+      <ellipse cx="850" cy="490" rx="125" ry="12" />
+      <ellipse cx="850" cy="490" rx="150" ry="18" />
+      <ellipse cx="680" cy="550" rx="90" ry="9" />
+      <ellipse cx="680" cy="550" rx="120" ry="15" />
+      <path d="M500 615q230-30 460 0M500 625q230-30 460 0M670 450q140-20 280 0" />
+    </g>
+    <g stroke="#a2ad80" stroke-width="2" opacity=".5">
+      <path
+        d="M1140 550q-5-70 15-90M1150 550q5-45 45-80M1160 555q30-50 60-50M350 535q10-70-15-110M340 540q-20-70-50-80"
+      />
+    </g>
+    <path d="M0 650V0h1500v650" fill="none" stroke="#112c30" stroke-width="100" opacity=".4" />
+  </g>
+</svg>

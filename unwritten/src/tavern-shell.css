@@ -1,0 +1,598 @@
+.tavern-shell {
+  min-height: 100dvh;
+  background: #291d14;
+}
+.tavern-navigation {
+  width: 238px;
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  padding: 34px 20px 19px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  color: #bda580;
+  background: var(--wood-grain), linear-gradient(95deg, #291e16, #37271b 65%, #21180f);
+  border-right: 1px solid #ad834848;
+  box-shadow: 5px 0 18px #100a0633;
+}
+.tavern-nav-brand {
+  font-size: 19px;
+  letter-spacing: 2px;
+  gap: 8px;
+}
+.tavern-nav-brand small {
+  font-size: 7px;
+  letter-spacing: 1.7px;
+  margin-top: 8px;
+}
+.tavern-nav-ornament {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  color: #a77e41;
+  margin: 32px 0 25px;
+  font-size: 13px;
+}
+.tavern-nav-ornament span {
+  height: 1px;
+  width: 55px;
+  background: #ba92413b;
+}
+.tavern-nav-label {
+  font-size: 7px;
+  letter-spacing: 1.35px;
+  color: #9f8968;
+  margin: 0 9px 18px;
+}
+.tavern-navigation nav {
+  display: grid;
+  gap: 7px;
+}
+.tavern-navigation nav a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 11px;
+  text-decoration: none;
+  color: #bfae92;
+  font-size: 11px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+.tavern-navigation nav a:hover {
+  background: #70502b33;
+  color: #f1dbaf;
+}
+.tavern-navigation nav a[aria-current='page'] {
+  border-color: #ad8a4b55;
+  background: linear-gradient(90deg, #72503377, #4b342633);
+  color: #ecd4a5;
+  box-shadow: inset 0 1px #d1af6520;
+}
+.tavern-navigation nav a[aria-current='page']::before {
+  content: '';
+  position: absolute;
+  left: -21px;
+  top: 13px;
+  bottom: 13px;
+  width: 3px;
+  background: #c49d57;
+}
+.tavern-navigation nav small {
+  margin-left: auto;
+  font-size: 9px;
+  color: #c1a66e;
+  border: 1px solid #9e804440;
+  padding: 1px 5px;
+}
+.tavern-active-mark {
+  width: 4px;
+  height: 4px;
+  background: #d1ac61;
+  transform: rotate(45deg);
+  margin-left: auto;
+}
+.tavern-resume {
+  margin: 35px 0 25px;
+  padding: 15px;
+  border: 1px solid #94713c50;
+  background: #1c140d44;
+  box-shadow: inset 0 0 0 3px #ad8b4410;
+}
+.tavern-resume > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 7px;
+  letter-spacing: 1px;
+  color: #a78c5e;
+}
+.tavern-resume h2 {
+  font:
+    15px/1.5 'Cinzel',
+    Georgia,
+    serif;
+  color: #d2b98a;
+  margin: 13px 0 8px;
+}
+.tavern-resume p {
+  color: #a99574;
+  font-size: 9px;
+  line-height: 1.6;
+}
+.tavern-resume button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0 0;
+  background: none;
+  border-top: 1px solid #92703c33;
+  color: #cfb17c;
+  font-size: 9px;
+  margin-top: 13px;
+}
+.tavern-nav-bottom {
+  margin-top: auto;
+}
+.tavern-nav-bottom > p {
+  font:
+    italic 11px/1.8 'Lora',
+    Georgia,
+    serif;
+  color: #9e8965;
+  text-align: center;
+  margin: 20px 0 25px;
+}
+.tavern-profile-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid #a5824340;
+  text-decoration: none;
+}
+.tavern-profile-avatar {
+  width: 37px;
+  height: 37px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid #b18c48;
+  border-radius: 50%;
+  font:
+    17px 'Cinzel',
+    serif;
+  color: #d9b977;
+  background: radial-gradient(#6d4d2b, #372718);
+  flex-shrink: 0;
+}
+.tavern-profile-link strong {
+  font-size: 11px;
+  font-weight: 500;
+  display: block;
+  color: #d3ba8c;
+  overflow-wrap: anywhere;
+}
+.tavern-profile-link small {
+  display: block;
+  font-size: 8px;
+  color: #9f8b68;
+  margin-top: 4px;
+}
+.tavern-profile-link > svg {
+  margin-left: auto;
+  color: #a18b63;
+  flex-shrink: 0;
+}
+.tavern-local-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 7px;
+  color: #9c855f;
+  margin-top: 18px;
+}
+.tavern-local-indicator > span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #b48c48;
+}
+.tavern-shell-content {
+  margin-left: 238px;
+  min-width: 0;
+}
+.tavern-shell .library-header {
+  height: 70px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.tavern-shell .library-header > .brand {
+  display: none;
+}
+.tavern-shell .library-header::before {
+  content: 'WELCOME TO THE STORY TAVERN';
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #b19668;
+}
+.tavern-shell .library-hero {
+  min-height: 510px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.tavern-shell .library-hero h1 {
+  font-size: clamp(34px, 3.8vw, 56px);
+}
+.tavern-section-library .library-hero {
+  display: none;
+}
+.tavern-account-page {
+  padding: 45px clamp(24px, 5vw, 75px) 70px;
+  min-height: 100dvh;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 120px, #100a0640 121px 123px), var(--wood-grain),
+    radial-gradient(ellipse at 90% 0%, #80532933, transparent 70%), #2b2017;
+}
+.tavern-account-heading {
+  border-bottom: 1px solid #a5834638;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+.tavern-account-heading h1 {
+  font:
+    32px/1.3 'Cinzel',
+    Georgia,
+    serif;
+  color: #e0cba4;
+  margin: 15px 0 12px;
+}
+.tavern-account-heading > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #b4a38a;
+  max-width: 600px;
+}
+.tavern-profile-card {
+  max-width: 610px;
+  padding: 30px;
+  border: 1px solid #b29356;
+  background: var(--parchment), #eadcbc;
+  box-shadow:
+    0 8px 20px #0004,
+    inset 0 0 0 4px #a8884220;
+}
+.tavern-profile-card-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #9d793c55;
+}
+.tavern-profile-card-top .tavern-profile-avatar {
+  height: 55px;
+  width: 55px;
+  font-size: 24px;
+}
+.tavern-profile-card h2 {
+  font:
+    24px 'Cinzel',
+    serif;
+  margin: 0 0 6px;
+  color: #654626;
+  overflow-wrap: anywhere;
+}
+.tavern-profile-card-top p {
+  margin: 0;
+  font-size: 10px;
+  color: #8b724c;
+}
+.tavern-profile-card label {
+  display: block;
+  font-size: 11px;
+  color: #72512e;
+  margin: 20px 0 10px;
+}
+.tavern-profile-card label > span {
+  color: #947a52;
+  font-size: 9px;
+  float: right;
+}
+.tavern-profile-card input,
+.tavern-profile-card textarea {
+  width: 100%;
+  display: block;
+  padding: 12px;
+  border: 1px solid #b69a62;
+  border-radius: 1px;
+  background: #f5e9ce;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #5e432a;
+  resize: vertical;
+}
+.tavern-profile-card textarea::placeholder {
+  color: #a18a64;
+}
+.tavern-profile-card .primary-button {
+  margin-top: 22px;
+}
+.tavern-profile-notice {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #8b724b;
+  margin: 17px 0 0;
+}
+.tavern-character-page {
+  display: grid;
+  grid-template-columns: minmax(240px, 330px) minmax(230px, 1fr);
+  gap: 28px;
+  max-width: 900px;
+  align-items: start;
+}
+.tavern-character-page .character-sheet {
+  margin: 0;
+  padding: 22px;
+}
+.tavern-character-page .sheet-slot small {
+  font-size: 8px;
+}
+.tavern-character-page .sheet-attributes span {
+  font-size: 9px;
+}
+.tavern-character-summary {
+  color: #c0ad8a;
+  padding: 18px 0;
+}
+.tavern-character-summary h2 {
+  font:
+    29px 'Cinzel',
+    serif;
+  color: #e1c99a;
+  margin: 15px 0;
+}
+.tavern-character-summary p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.tavern-character-summary dl {
+  margin: 25px 0;
+}
+.tavern-character-summary dl > div {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid #a6894f33;
+  padding: 12px 0;
+  font-size: 10px;
+}
+.tavern-character-summary dt {
+  color: #a9926d;
+}
+.tavern-character-summary dd {
+  margin: 0;
+  text-align: right;
+}
+.tavern-ongoing-card {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  max-width: 900px;
+  border: 1px solid #af8d4d;
+  background: var(--parchment), #eadcbd;
+  box-shadow: 0 8px 20px #0004;
+}
+.tavern-ongoing-art {
+  background:
+    linear-gradient(0deg, #291a1080, transparent),
+    url('/hall.svg') center/cover;
+  min-height: 285px;
+  filter: sepia(0.45);
+}
+.tavern-ongoing-card > div:last-child {
+  padding: 30px;
+}
+.tavern-ongoing-card h2 {
+  font:
+    25px/1.4 'Cinzel',
+    serif;
+  color: #5e4127;
+  margin: 15px 0;
+}
+.tavern-ongoing-card p {
+  font-size: 12px;
+  color: #816540;
+  line-height: 1.7;
+}
+.tavern-ongoing-progress {
+  height: 4px;
+  background: #cbb888;
+  margin: 22px 0 9px;
+}
+.tavern-ongoing-progress > span {
+  display: block;
+  height: 100%;
+  background: #996e36;
+}
+.tavern-ongoing-card .tavern-progress-caption {
+  font-size: 10px;
+  margin-bottom: 22px;
+}
+.tavern-empty {
+  text-align: center;
+  padding: 55px 25px;
+  border: 1px solid #9f7d4444;
+  background: #140e0922;
+  color: #aa8c57;
+  max-width: 800px;
+}
+.tavern-empty h2 {
+  font:
+    25px/1.4 'Cinzel',
+    serif;
+  color: #d1b98c;
+}
+.tavern-empty p {
+  color: #b6a488;
+  max-width: 480px;
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 15px auto 25px;
+}
+.tavern-empty .text-link {
+  display: flex;
+  margin: 22px auto 0;
+  color: #c5a770;
+}
+.tavern-mobile-bar,
+.tavern-nav-close,
+.tavern-menu-backdrop {
+  display: none;
+}
+@media (max-width: 1150px) {
+  .tavern-shell .library-hero h1 {
+    font-size: 37px;
+  }
+  .tavern-shell .library-story {
+    grid-template-columns: 1fr;
+  }
+  .tavern-shell .library-cover {
+    min-height: 250px;
+  }
+  .tavern-character-page {
+    grid-template-columns: 1fr;
+  }
+  .tavern-character-page .character-sheet {
+    max-width: 420px;
+  }
+  .tavern-ongoing-card {
+    grid-template-columns: 1fr;
+  }
+  .tavern-ongoing-art {
+    min-height: 185px;
+  }
+}
+@media (max-width: 900px) {
+  .tavern-navigation {
+    transform: translateX(-100%);
+    visibility: hidden;
+    width: 260px;
+    transition:
+      transform 0.2s,
+      visibility 0.2s;
+    z-index: 45;
+    padding-top: 30px;
+  }
+  .tavern-navigation.menu-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .tavern-shell-content {
+    margin-left: 0;
+  }
+  .tavern-mobile-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 25;
+    padding: 12px 20px;
+    height: 62px;
+    border-bottom: 1px solid #ad854055;
+    color: #c8ac75;
+    background: var(--wood-grain), #2c2017;
+  }
+  .tavern-mobile-bar > button {
+    padding: 5px;
+    display: flex;
+    background: none;
+    color: #d5b778;
+  }
+  .tavern-mobile-bar > a:not(.tavern-mobile-avatar) {
+    font:
+      18px 'Cinzel',
+      serif;
+    letter-spacing: 2px;
+    color: #e7d1a1;
+    text-decoration: none;
+  }
+  .tavern-mobile-avatar {
+    text-decoration: none;
+    border: 1px solid #b68e4a;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #d9bb81;
+    font:
+      13px 'Cinzel',
+      serif;
+  }
+  .tavern-menu-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    background: #100b07bb;
+  }
+  .tavern-nav-close {
+    display: flex;
+    background: none;
+    color: #b69860;
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    padding: 5px;
+  }
+  .tavern-shell .library-header {
+    height: 52px;
+    padding: 0 20px;
+  }
+  .tavern-shell .library-header::before {
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+  .tavern-shell .library-hero {
+    min-height: 510px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media (max-width: 520px) {
+  .tavern-shell .library-header::before {
+    content: 'YOUR SEAT BY THE FIRE';
+  }
+  .tavern-shell .library-header nav > a {
+    display: none;
+  }
+  .tavern-shell .library-hero h1 {
+    font-size: 34px;
+  }
+  .tavern-account-page {
+    padding: 30px 21px 45px;
+    min-height: calc(100dvh - 62px);
+  }
+  .tavern-account-heading h1 {
+    font-size: 27px;
+  }
+  .tavern-profile-card {
+    padding: 22px;
+  }
+  .tavern-profile-card label > span {
+    float: none;
+    display: block;
+    margin-top: 5px;
+  }
+  .tavern-ongoing-card > div:last-child {
+    padding: 23px;
+  }
+}

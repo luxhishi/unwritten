@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="650" viewBox="0 0 1500 650">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1">
+      <stop stop-color="#132b2e" />
+      <stop offset="1" stop-color="#3a4a45" />
+    </linearGradient>
+    <radialGradient id="light">
+      <stop stop-color="#f4d795" stop-opacity=".5" />
+      <stop offset="1" stop-color="#d0aa59" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x2="0" y2="1">
+      <stop stop-color="#67746a" />
+      <stop offset="1" stop-color="#1a3030" />
+    </linearGradient>
+    <linearGradient id="gold">
+      <stop stop-color="#cfba83" />
+      <stop offset=".5" stop-color="#857044" />
+      <stop offset="1" stop-color="#d3b577" />
+    </linearGradient>
+    <linearGradient id="door" x2="0" y2="1">
+      <stop stop-color="#d1be83" />
+      <stop offset="1" stop-color="#6e7854" />
+    </linearGradient>
+    <pattern
+      id="tiles"
+      width="130"
+      height="90"
+      patternUnits="userSpaceOnUse"
+      patternTransform="skewX(-20)"
+    >
+      <path d="M0 0h130v90H0z" fill="none" stroke="#93a091" stroke-opacity=".14" />
+    </pattern>
+    <pattern id="wall" width="110" height="45" patternUnits="userSpaceOnUse">
+      <path d="M0 0h110v45H0zM55 0v45" fill="none" stroke="#86a197" stroke-opacity=".09" />
+    </pattern>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer><feFuncA type="linear" slope=".12" /></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="soft-light" />
+    </filter>
+    <filter id="blur"><feGaussianBlur stdDeviation="12" /></filter>
+    <g id="arch">
+      <path
+        d="M0 520V190Q0 0 130 0Q260 0 260 190V520"
+        fill="#142b2d"
+        stroke="#6b8273"
+        stroke-width="12"
+      />
+      <path
+        d="M24 520V190Q24 25 130 25Q236 25 236 190V520"
+        fill="none"
+        stroke="#a2ac8b"
+        stroke-opacity=".3"
+        stroke-width="2"
+      />
+      <path
+        d="M40 520V190Q40 50 130 50Q220 50 220 190V520"
+        fill="#0e2227"
+        stroke="#4a675d"
+        stroke-width="6"
+      />
+      <path d="M130 50v470M40 250h180" stroke="#5e7567" stroke-opacity=".4" stroke-width="2" />
+      <path d="M118 330h24v7h-24z" fill="url(#gold)" />
+    </g>
+    <g id="lamp">
+      <path d="M0 0v45m-19 0h38l-6 52h-26z" fill="#1a2b27" stroke="#a19364" stroke-width="2" />
+      <path d="M-11 52h22l-4 36h-14z" fill="#e7cf91" />
+      <ellipse cy="70" rx="75" ry="95" fill="url(#light)" />
+    </g>
+  </defs>
+  <g filter="url(#grain)">
+    <path fill="url(#bg)" d="M0 0h1500v650H0z" />
+    <path fill="url(#wall)" d="M0 0h1500v550H0z" />
+    <path d="M0 650V0h1500v650H0" fill="none" stroke="#0d2024" stroke-width="110" />
+    <path
+      d="M0 0L550 265h420L1500 0"
+      fill="#142b2e"
+      stroke="#5b7369"
+      stroke-opacity=".4"
+      stroke-width="3"
+    />
+    <path d="M0 650l550-195h420l530 195" fill="url(#floor)" />
+    <path d="M0 650l550-195h420l530 195" fill="url(#tiles)" />
+    <path
+      d="M550 455h420l530 195M550 455L0 650m720-195L500 650m335-195l100 195M630 455l-330 195m600-195l260 195"
+      fill="none"
+      stroke="#bac0a3"
+      stroke-opacity=".13"
+    />
+    <path
+      d="M520 465V258Q520 140 750 140q230 0 230 118v207"
+      fill="#223c39"
+      stroke="#577165"
+      stroke-width="14"
+    />
+    <path
+      d="M548 465V267Q548 167 750 167t202 100v198"
+      fill="#213632"
+      stroke="#8b977b"
+      stroke-opacity=".3"
+      stroke-width="2"
+    />
+    <path d="M0 0h1500M0 50h1500" stroke="#8b9a7b" stroke-opacity=".13" stroke-width="3" />
+    <g transform="translate(95 45) scale(.9)"><use href="#arch" /></g>
+    <g transform="translate(390 150) scale(.58)"><use href="#arch" /></g>
+    <g transform="translate(1140 45) scale(.9)"><use href="#arch" /></g>
+    <g transform="translate(965 150) scale(.58)"><use href="#arch" /></g>
+    <path d="M0 545h1500M0 570h1500" stroke="#899579" stroke-opacity=".15" stroke-width="4" />
+    <g fill="#213b37" stroke="#778871" stroke-opacity=".4">
+      <path d="M55 0h35v550H55zM350 0h26v520h-26zM1122 0h25v520h-25zM1397 0h35v550h-35z" />
+      <path d="M40 535h65v20H40zM335 505h56v18h-56zM1108 505h53v18h-53zM1382 535h66v20h-66z" />
+    </g>
+    <ellipse cx="787" cy="389" rx="170" ry="200" fill="url(#light)" />
+    <path d="M742 457V350q0-45 45-45t45 45v107z" fill="#10292a" stroke="#9c956c" stroke-width="7" />
+    <path d="M751 457V350q0-35 36-35t36 35v107z" fill="url(#door)" />
+    <path d="M759 449v-96q0-29 28-29t28 29v96z" fill="none" stroke="#51623e" stroke-width="2" />
+    <circle cx="811" cy="400" r="4" fill="#e7ce8c" />
+    <path d="M742 457h90v6h-90" fill="#d3c08b" />
+    <path
+      d="M730 290Q705 325 722 455l15-10V318q45-37 98 0v127l17 10q20-145-18-165z"
+      fill="#3c4b3e"
+      stroke="#a89d69"
+      stroke-opacity=".3"
+      stroke-width="2"
+    />
+    <g transform="translate(640 80) scale(.75)"><use href="#lamp" /></g>
+    <g transform="translate(1030 5)"><use href="#lamp" /></g>
+    <g transform="translate(430 5)"><use href="#lamp" /></g>
+    <g transform="translate(1080 425)">
+      <ellipse cy="90" rx="90" ry="14" fill="#122a2b" opacity=".7" />
+      <path
+        d="M-50 0l10 90m80-90l-8 90M0 0l10 75"
+        stroke="#a8c2b1"
+        stroke-opacity=".5"
+        stroke-width="5"
+      />
+      <ellipse
+        rx="65"
+        ry="19"
+        fill="#adc7b4"
+        fill-opacity=".25"
+        stroke="#a8c2b1"
+        stroke-opacity=".6"
+        stroke-width="2"
+      />
+      <path d="M-42 0h82" stroke="#e6e7ba" stroke-opacity=".5" />
+      <g transform="rotate(-15)">
+        <circle cx="0" cy="-5" r="5" fill="none" stroke="#dcc482" stroke-width="3" />
+        <path d="M5-5h22m-5 0v5m-4-5v4" stroke="#dcc482" stroke-width="3" />
+      </g>
+    </g>
+    <g fill="#d4d5aa" opacity=".35">
+      <circle cx="670" cy="244" r="1" />
+      <circle cx="884" cy="198" r="1.5" />
+      <circle cx="1100" cy="150" r="1" />
+      <circle cx="985" cy="333" r="1" />
+      <circle cx="584" cy="399" r="1.5" />
+      <circle cx="1154" cy="390" r="1.5" />
+      <circle cx="744" cy="184" r="1" />
+    </g>
+    <path d="M0 650V0h1500v650" fill="none" stroke="#0a2026" stroke-width="95" opacity=".45" />
+  </g>
+</svg>

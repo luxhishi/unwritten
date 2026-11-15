@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="650" viewBox="0 0 1500 650">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#1b3537" />
+      <stop offset="1" stop-color="#a4ad82" />
+    </linearGradient>
+    <linearGradient id="ground" x2="0" y2="1">
+      <stop stop-color="#516c4c" />
+      <stop offset="1" stop-color="#223c30" />
+    </linearGradient>
+    <radialGradient id="sun">
+      <stop stop-color="#f9ecc4" stop-opacity=".6" />
+      <stop offset="1" stop-color="#e2d5a2" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="3" stitchTiles="stitch" />
+      <feComponentTransfer><feFuncA type="linear" slope=".12" /></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="soft-light" />
+    </filter>
+    <g id="tree">
+      <path
+        d="M0 270Q-35 220-28 160q-15-55 2-100Q-8-70 15-10q27 50 18 100 25 45 2 100 12 50-25 80"
+        fill="#254b3d"
+      />
+      <path d="M0 270V70" stroke="#779179" stroke-width="2" opacity=".25" />
+    </g>
+    <g id="flower">
+      <path d="M0 14V0" stroke="#8d9f66" />
+      <circle cy="-2" r="4" fill="#bdba82" />
+      <circle cy="-2" r="1.5" fill="#e3c78d" />
+    </g>
+  </defs>
+  <g filter="url(#grain)">
+    <path fill="url(#sky)" d="M0 0h1500v650H0z" />
+    <circle cx="990" cy="180" r="260" fill="url(#sun)" />
+    <path
+      d="M0 360Q100 280 200 340q130-85 230-15 120-85 230 0 100-80 230 0 150-80 270-20 140-70 340 15v330H0"
+      fill="#3c5e49"
+    />
+    <path fill="url(#ground)" d="M0 390q750-80 1500 0v260H0z" />
+    <path d="M730 650l170-265h70l170 265z" fill="#98a386" opacity=".45" />
+    <path
+      d="M0 520q350-90 620-20l-80 150H0zM1500 520q-300-90-470-20l100 150h370z"
+      fill="#36573b"
+      stroke="#77935c"
+      stroke-width="8"
+    />
+    <path
+      d="M0 555q300-80 590-20M1500 555q-240-80-430-20"
+      fill="none"
+      stroke="#91a174"
+      stroke-width="3"
+      opacity=".5"
+    />
+    <g transform="translate(930 418)">
+      <ellipse rx="95" ry="24" fill="#24473d" stroke="#80957b" stroke-width="6" />
+      <ellipse cy="-5" rx="85" ry="17" fill="#688e82" />
+      <path d="M-50-8q50-12 100 0M-30-5q30-7 60 0" fill="none" stroke="#c1c4a1" opacity=".6" />
+      <path d="M-12-10l6-80h12l6 80z" fill="#9aab89" />
+      <ellipse cy="-82" rx="38" ry="10" fill="#627f6b" stroke="#9dad89" stroke-width="4" />
+      <path d="M0-88v-32" stroke="#b2c5ae" stroke-width="4" />
+      <path
+        d="M0-115q-25-55-55 20M0-115q25-55 55 20"
+        fill="none"
+        stroke="#bfd2b7"
+        stroke-width="2"
+        opacity=".6"
+      />
+      <circle cy="-120" r="6" fill="#bbc9a4" />
+    </g>
+    <g>
+      <use href="#tree" transform="translate(150 130) scale(1.45)" />
+      <use href="#tree" transform="translate(310 200) scale(1.1)" />
+      <use href="#tree" transform="translate(470 250) scale(.8)" />
+      <use href="#tree" transform="translate(1200 240) scale(.85)" />
+      <use href="#tree" transform="translate(1350 160) scale(1.2)" />
+      <use href="#tree" transform="translate(1480 60) scale(1.7)" />
+    </g>
+    <path
+      d="M0 100q150-80 250 5M0 0q190-40 310 45M1500 90q-150-100-250-60"
+      fill="none"
+      stroke="#1a3c32"
+      stroke-width="45"
+    />
+    <g opacity=".7">
+      <use href="#flower" x="100" y="570" />
+      <use href="#flower" x="150" y="550" />
+      <use href="#flower" x="220" y="560" />
+      <use href="#flower" x="290" y="535" />
+      <use href="#flower" x="370" y="530" />
+      <use href="#flower" x="440" y="550" />
+      <use href="#flower" x="480" y="600" />
+      <use href="#flower" x="280" y="600" />
+      <use href="#flower" x="1140" y="565" />
+      <use href="#flower" x="1220" y="540" />
+      <use href="#flower" x="1310" y="545" />
+      <use href="#flower" x="1400" y="570" />
+      <use href="#flower" x="1240" y="610" />
+      <use href="#flower" x="1430" y="630" />
+    </g>
+    <path d="M0 650V0h1500v650" fill="none" stroke="#102e29" stroke-width="60" opacity=".3" />
+  </g>
+</svg>
